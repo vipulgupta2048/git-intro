@@ -87,47 +87,62 @@
       </section>
       <section id="fr4">
         <h2>Why Git?</h2>
-        <p>
-          <ul>
-            <li class="fragment">You can use git even when you're offline</li>
-            <li class="fragment">Code revisions (commit) that you made would be available to only you locally unless you push to remote repo.</li>
-            <li class="fragment">Create branches, work locally, isolate your work and merge seamlessly.</li>
-            <li class="fragment">It takes snapshots of changes and treat files as stream of snapshots over time.</li>
-          </ul>
-        </p>
+        <section>
+          <p>
+            <ul>
+              <li class="fragment">You can use git even when you're offline</li>
+              <li class="fragment">Code revisions (commit) that you made would be available to only you locally unless you push to remote repo.</li>
+              <li class="fragment">Create branches, work locally, isolate your work and merge seamlessly.</li>
+              <li class="fragment">It takes snapshots of changes and treat files as stream of snapshots over time.</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <p>
+            <ul>
+              <li class="fragment">It compresses the .git contents</li>
+              <li class="fragment">It has integrity</li>
+              <li class="fragment">The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:
+                <pre><code class="hljs" data-trim contenteditable>24b9da6552252987aa493b52f8696cd6d3b00373</code></pre></li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <p>
+            <ul>
+              <li class="fragment">You will see these hash values all over the place in Git because it uses them so much. In fact, Git stores everything in its database not by file name but by the hash value of its contents.</li>
+            </ul>
+          </p>
+        </section>
       </section>
-      <section id="fr5">
-        <h2>Why Git? | continued...</h2>
-        <p>
-          <ul>
-            <li class="fragment">It compresses the .git contents</li>
-            <li class="fragment">It has integrity</li>
-            <li class="fragment">The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:
-              <pre><code class="hljs" data-trim contenteditable>24b9da6552252987aa493b52f8696cd6d3b00373</code></pre></li>
-            <li class="fragment">You will see these hash values all over the place in Git because it uses them so much. In fact, Git stores everything in its database not by file name but by the hash value of its contents.</li>
-          </ul>
-        </p>
-      </section>
-      <section id="fr6">
+      <section>
         <h2>Git Workflow</h2>
-        <p>
-          <ul>
-            <li class="fragment">Obtain Repo
-              <pre><code class="hljs" data-trim contenteditable>git init</code></pre>
-              <pre><code class="hljs" data-trim contenteditable>git clone</code></pre>
-            </li>
-            <li class="fragment">Make Changes</li>
-            <li class="fragment">Stage Changes
-              <pre><code class="hljs" data-trim contenteditable>git add {filename}</code></pre>
-            </li>
-            <li class="fragment">Commit Changes
-              <pre><code class="hljs" data-trim contenteditable>git commit -m “Commit message”</code></pre>
-            </li>
-            <li class="fragment">Push Changes to Remote Repo
-              <pre><code class="hljs" data-trim contenteditable>git push {remote_name} {repo_name}</code></pre>
-            </li>
-          </ul>
-        </p>
+          <section>
+            <span>Obtain Repo
+              <pre><code class="hljs" data-trim>git init</code></pre>
+              <pre><code class="hljs" data-trim>git clone</code></pre>
+            </span>
+          </section>
+          <section>
+            <span>Make Changes</span>
+          </section>
+          <section>
+            <span>Stage Changes
+              <pre><code class="hljs" data-trim>git add {filename}</code></pre>
+            </span>
+          </section>
+          <section>
+            <span>
+              Commit Changes
+              <pre><code class="hljs" data-trim>git commit -m “Commit message”</code></pre>
+            </span>
+          </section>
+          <section>
+            <span>
+              Push Changes to Remote Repo
+              <pre><code class="hljs" data-trim>git push {remote_name} {repo_name}</code></pre>
+            </span>
+          </section>
       </section>
       <section id="fr7">
         <h2>Demo</h2>

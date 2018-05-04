@@ -110,10 +110,11 @@
                 <section>
                     <p>
                         <ul>
+                            <li class="fragment">It's free and open-source.</li>
                             <li class="fragment">You can use git even when you're offline</li>
                             <li class="fragment">Code revisions (commit) that you made would be available to only you locally unless you push to remote repo.
                             </li>
-                            <li class="fragment">Create branches, work locally, isolate your work and merge seamlessly.</li>
+                            <li class="fragment">Create and support parallel branches, work locally, isolate your work and merge seamlessly to collaborate.</li>
                             <li class="fragment">It takes snapshots of changes and treat files as stream of snapshots over time.
                             </li>
                         </ul>
@@ -143,23 +144,8 @@
             <section id="7">
                 <h2>Demo</h2>
                 <p>
-<<<<<<< HEAD
-                <ul>
-                    <li class="fragment">Config thy git</li>
-                    <li class="fragment">Forking Repositories on Github</li>
-                    <li class="fragment">Cloning Them</li>
-                    <li class="fragment">Making Changes</li>
-                    <li class="fragment">Commiting those Changes</li>
-                    <li class="fragment">Adding Remotes</li>
-                    <li class="fragment">Checkout</li>
-                    <li class="fragment">Pushing Your Changes</li>
-                    <li class="fragment">Branching</li>
-                    <li class="fragment">Making Pull Requests</li>
-                    <li class="fragment">Pulling New Changes and more ..</li>
-                </ul>
-=======
                     <ul>
-                        <li class="fragment">Config the git</li>
+                        <li class="fragment">Configure git</li>
                         <li class="fragment">Forking Repositories on Github</li>
                         <li class="fragment">Cloning Them</li>
                         <li class="fragment">Making Changes</li>
@@ -171,31 +157,54 @@
                         <li class="fragment">Making Pull Requests</li>
                         <li class="fragment">Pulling New Changes and more ..</li>
                     </ul>
->>>>>>> 7d6a413... Modified many other sections | formatted code
                 </p>
             </section>
             <section id="8">
                 <h2>Git Workflow</h2>
                 <section>
+<<<<<<< HEAD
+<<<<<<< HEAD
                     <span>Configuring git
+=======
+                <span>Configuring git
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
+=======
+                    <span>Configuring git
+>>>>>>> 6320029... Beautify
                   <pre><code class="hljs" data-trim>git config --global user.name "John Doe"</code></pre>
                   <pre><code class="hljs" data-trim> git config --global user.email "johndoe@example.com"</code></pre>
                   <pre><code class="hljs" data-trim> git config --global core.editor "nano"</code></pre>
                   <p>
                   <ul>
-                      <li class="fragment"> This is done for git to identify who is making the commits, for people who will check later on. We recommend to go with nano in the beginning for the editor of choice.</li>
+                      <li class="fragment">This is done for git to identify who is making the commits. For newbies, we recommend going with nano at the beginning as the editor of choice.</li>
                   </ul>
                   </p>
                   </span>
                 </section>
                 <section>
+<<<<<<< HEAD
+<<<<<<< HEAD
                     <span>Obtain Repository <br>[Make your own/Clone from upstream]
+=======
+                <span>Obtain Repository <br>[Make your own/Clone from upstream]
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
+=======
+                    <span>Obtain Repository <br>[Make your own/Clone from upstream]
+>>>>>>> 6320029... Beautify
                   <pre><code class="hljs" data-trim>git init</code></pre>
                   <pre><code class="hljs" data-trim>git clone {repo_url} {directory_name} </code></pre>
                 </span>
                 </section>
                 <section>
+<<<<<<< HEAD
+<<<<<<< HEAD
                     <span>Stage Changes<br>[Untracked Changes --> Staging them]
+=======
+                <span>Stage Changes<br>[Untracked Changes --> Staging them]
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
+=======
+                    <span>Stage Changes<br>[Untracked Changes --> Staging them]
+>>>>>>> 6320029... Beautify
                   <pre><code class="hljs" data-trim>git add {filename}</code></pre>
                   <pre><code class="hljs" data-trim>git status</code></pre>
                   <p>
@@ -206,7 +215,15 @@
                 </span>
                 </section>
                 <section>
+<<<<<<< HEAD
+<<<<<<< HEAD
                     <span>
+=======
+                <span>
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
+=======
+                    <span>
+>>>>>>> 6320029... Beautify
                   Commit Changes <br> [Staged changes --> Commiting them]
                   <pre><code class="hljs" data-trim>git commit -m “Commit message”</code></pre>
                   <pre><code class="hljs" data-trim>git status</code></pre>
@@ -214,15 +231,24 @@
                 </span>
                 </section>
                 <section>
+<<<<<<< HEAD
+<<<<<<< HEAD
                     <span>
+=======
+                <span>
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
+=======
+                    <span>
+>>>>>>> 6320029... Beautify
                   Defining Remotes
                   <pre><code class="hljs" data-trim>git remote -v</code></pre>
                   <pre><code class="hljs" data-trim>git remote add {remote_name} {repo_url}</code></pre>
                   <p>
                   <ul>
-                      <li class="fragment">Remote is just a fancy way to say where the code is stored on GitHub, and where do you want to push/pull the changes from.</li>
+                      <li class="fragment">A remote is basically a bookmark that leads to a different repository from which you may wish to pull or push your code.</li>
                   </ul>
                   </p>
+<<<<<<< HEAD
                 </span>
                 </section>
                 <section>
@@ -237,15 +263,30 @@
                         <p>
                 </section>
                 <section>
-<<<<<<< HEAD
                 <span>
                   Repeat till you get them right ... <br> Then move on to more advanced topics such as branching, rebasing and cherry-picking commits.
-=======
-                    <span>
-                    Repeat till you get them right ... <br> Then move on to more advanced topics such as branching, rebasing and cherry-picking commits.
->>>>>>> 7d6a413... Modified many other sections | formatted code
                 </span>
                 </section>
+=======
+                </span>
+                </section>
+                <section>
+                    <span>
+                  Push Changes to Remote Repo
+                  <pre><code class="hljs" data-trim>git push {remote_name} {branch_name}</code></pre>
+                </span>
+                    <p>
+                        <ul>
+                            <li class="fragment">Pushing to a repository requires authentication that needs to be provided in the form of your Github username and password.</li>
+                        </ul>
+                        <p>
+                </section>
+                <section>
+                    <span>
+                    Repeat till you get them right ... <br> Then move on to more advanced topics such as branching, rebasing and cherry-picking commits.
+                </span>
+                </section>
+>>>>>>> 32abd04... fix(*): Improve demo section with some verbose examples (#6)
             </section>
             <section id="fr8">
                 <h2>A bit about git internals</h2>

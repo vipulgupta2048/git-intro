@@ -140,50 +140,91 @@
                     </p>
                 </section>
             </section>
-            <section>
+            <section id="7">
+                <h2>Demo</h2>
+                <p>
+                <ul>
+                    <li class="fragment">Configure git</li>
+                    <li class="fragment">Forking Repositories on Github</li>
+                    <li class="fragment">Cloning Them</li>
+                    <li class="fragment">Making Changes</li>
+                    <li class="fragment">Commiting those Changes</li>
+                    <li class="fragment">Adding Remotes</li>
+                    <li class="fragment">Checkout</li>
+                    <li class="fragment">Pushing Your Changes</li>
+                    <li class="fragment">Branching</li>
+                    <li class="fragment">Making Pull Requests</li>
+                    <li class="fragment">Pulling New Changes and more ..</li>
+                </ul>
+                </p>
+            </section>
+            <section id="8">
                 <h2>Git Workflow</h2>
                 <section>
-                <span>Obtain Repo
+                <span>Configuring git
+                  <pre><code class="hljs" data-trim>git config --global user.name "John Doe"</code></pre>
+                  <pre><code class="hljs" data-trim> git config --global user.email "johndoe@example.com"</code></pre>
+                  <pre><code class="hljs" data-trim> git config --global core.editor "nano"</code></pre>
+                  <p>
+                  <ul>
+                      <li class="fragment">This is done for git to identify who is making the commits. For newbies, we recommend going with nano at the beginning as the editor of choice.</li>
+                  </ul>
+                  </p>
+                  </span>
+                </section>
+                <section>
+                <span>Obtain Repository <br>[Make your own/Clone from upstream]
                   <pre><code class="hljs" data-trim>git init</code></pre>
-                  <pre><code class="hljs" data-trim>git clone</code></pre>
+                  <pre><code class="hljs" data-trim>git clone {repo_url} {directory_name} </code></pre>
                 </span>
                 </section>
                 <section>
-                    <span>Make Changes</span>
-                </section>
-                <section>
-                <span>Stage Changes
+                <span>Stage Changes<br>[Untracked Changes --> Staging them]
                   <pre><code class="hljs" data-trim>git add {filename}</code></pre>
+                  <pre><code class="hljs" data-trim>git status</code></pre>
+                  <p>
+                  <ul>
+                      <li class="fragment">Git tracks everything in your directory. Go ahead make and edit some new files and let git do all the heavy lifting for you.</li>
+                  </ul>
+                  </p>
                 </span>
                 </section>
                 <section>
                 <span>
-                  Commit Changes
+                  Commit Changes <br> [Staged changes --> Commiting them]
                   <pre><code class="hljs" data-trim>git commit -m “Commit message”</code></pre>
+                  <pre><code class="hljs" data-trim>git status</code></pre>
+                  <pre><code class="hljs" data-trim>git log</code></pre>
+                </span>
+                </section>
+                <section>
+                <span>
+                  Defining Remotes
+                  <pre><code class="hljs" data-trim>git remote -v</code></pre>
+                  <pre><code class="hljs" data-trim>git remote add {remote_name} {repo_url}</code></pre>
+                  <p>
+                  <ul>
+                      <li class="fragment">A remote is basically a bookmark that leads to a different repository from which you may wish to pull or push your code.</li>
+                  </ul>
+                  </p>
                 </span>
                 </section>
                 <section>
                 <span>
                   Push Changes to Remote Repo
-                  <pre><code class="hljs" data-trim>git push {remote_name} {repo_name}</code></pre>
+                  <pre><code class="hljs" data-trim>git push {remote_name} {branch_name}</code></pre>
                 </span>
-                </section>
-            </section>
-            <section id="fr7">
-                <h2>Demo</h2>
                 <p>
                 <ul>
-                    <li class="fragment">Config</li>
-                    <li class="fragment">Cloning</li>
-                    <li class="fragment">Forking</li>
-                    <li class="fragment">Branching</li>
-                    <li class="fragment">Remote</li>
-                    <li class="fragment">Checkout</li>
-                    <li class="fragment">Pull</li>
-                    <li class="fragment">Push</li>
-                    <li class="fragment">Pull Requests</li>
+                    <li class="fragment">Pushing to a repository requires authentication that needs to be provided in the form of your Github username and password.</li>
                 </ul>
-                </p>
+                <p>
+                </section>
+                <section>
+                <span>
+                    Repeat till you get them right ... <br> Then move on to more advanced topics such as branching, rebasing and cherry-picking commits.
+                </span>
+                </section>
             </section>
             <section id="fr8">
                 <h2>A bit about git internals</h2>
